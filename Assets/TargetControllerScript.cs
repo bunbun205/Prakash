@@ -11,4 +11,8 @@ public class TargetControllerScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Up
+    void Update()
+    {
+        
+    }
+}
