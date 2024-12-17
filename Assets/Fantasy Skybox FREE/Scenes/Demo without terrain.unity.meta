@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 48d4f62e2d5af1643a431d2f4b07ccbb
-NativeFormatImporter:
+guid: d6f9075f08d584eaca8ff0e10eba8bb0
+DefaultImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 18353
   packageName: Fantasy Skybox FREE
   packageVersion: 1.6.5
-  assetPath: Assets/Fantasy Skybox FREE/Panoramics/FS017/FS017_Night_Moonless.mat
+  assetPath: Assets/Fantasy Skybox FREE/Scenes/Demo without terrain.unity
   uploadId: 699843
