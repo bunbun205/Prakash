@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Linq;
 using System.Collections.Generic;
 
-public class TargetSetup : MonoBehaviour
+public class FaceTargetSetup : MonoBehaviour
 {
 
     public List <Material> FaceMaterials;
