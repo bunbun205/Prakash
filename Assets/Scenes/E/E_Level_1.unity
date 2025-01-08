@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 409035545}
   - component: {fileID: 409035544}
   - component: {fileID: 409035547}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 717991864}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Targets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ Transform:
   m_GameObject: {fileID: 876787584}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 889477439}
   - component: {fileID: 889477438}
   - component: {fileID: 889477441}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,7 +803,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2cf71793999856b8b1b53d584638d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Waypoints: []
+  Waypoints:
+  - {fileID: 284478801}
+  - {fileID: 1488922168}
+  - {fileID: 2036363299}
+  - {fileID: 1789270430}
+  - {fileID: 887069581}
 --- !u!1 &959308587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,7 +1147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1644113262}
   - component: {fileID: 1644113263}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Target 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1192,7 +1197,7 @@ GameObject:
   - component: {fileID: 1765577463}
   - component: {fileID: 1765577462}
   - component: {fileID: 1765577465}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

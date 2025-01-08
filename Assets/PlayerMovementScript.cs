@@ -28,5 +28,9 @@ public class PlayerMovementScript : MonoBehaviour
         float distance = Vector3.Distance(transform.position, destination);
         Vector3 newPos = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
         transform.position = newPos;
+        if (distance <= 0.01)
+        {
+            index++;
+        }
     }
 }
