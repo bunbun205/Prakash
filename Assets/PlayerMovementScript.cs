@@ -10,7 +10,7 @@ public class PlayerMovementScript : MonoBehaviour
     public List<GameObject> Waypoints;
     int index = 0;
     public float speed = 0.0f;
-
+    public float dist = 0;
     
     void Start()
     {
