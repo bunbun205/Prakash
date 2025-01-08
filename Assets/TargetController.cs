@@ -10,6 +10,14 @@ public class TargetController : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    public void onPointerEnter() {
+        Debug.Log("enter");
+    }
+
+    public void onPointerExit() {
+        Debug.Log("exit");
+    }
     public void OnPointerClick(){
 
         if(targetFlag == 1) Debug.Log("Correct option");

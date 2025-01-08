@@ -8,9 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.26.0/Hello Cardboard/Scenes/VrMode.unity
     guid: a45c80a4da1fa4625a30ce04b599e90d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/E/E_Level_1.unity
     guid: 2e6419d6cd58daf6da554cea74584333
+  - enabled: 1
+    path: Assets/Scenes/Colors/Colors_Level_1.unity
+    guid: a12191a689ff9882c8785fea669e7418
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 7cdc382c265a060728388b1498a767f2, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: f008daf68e864355fa5eeace57937706, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 8afb6d8094958c835be3aea8181319fc, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 43c0b69782cb7ff95b8f12eadc325aad, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1cf3fcca1c03ca1459b8c9569701aee2, type: 2}
   m_UseUCBPForAssetBundles: 0
