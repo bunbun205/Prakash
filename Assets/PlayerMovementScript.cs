@@ -7,15 +7,13 @@ using System.Collections.Generic;
 public class PlayerMovementScript : MonoBehaviour
 
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public List <GameObject> Waypoints;
+    public List<GameObject> Waypoints;
     int index = 0;
-    public static float speed = 0.0f;
+    public float speed = 0.0f;
 
     
     void Start()
     {
-        speed = 10.0f;
         index = 0;
         transform.position = Waypoints[index].transform.position;
         
