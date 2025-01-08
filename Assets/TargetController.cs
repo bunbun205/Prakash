@@ -28,7 +28,7 @@ public class TargetController : MonoBehaviour
                 Score += 50;
             }
             else {
-                Score += 0.1;
+                Score += 1;
             }
         }
         
