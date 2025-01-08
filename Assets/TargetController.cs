@@ -22,5 +22,5 @@ public class TargetController : MonoBehaviour
 
         if(targetFlag == 1) Debug.Log("Correct option");
         else Debug.Log("Wrong option");
-    } 
+    }
 }
