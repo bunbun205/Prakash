@@ -20,7 +20,7 @@ public class ETargetSetup : MonoBehaviour
         System.Random rnd = new System.Random();
         int oddPlaneIndex = rnd.Next (0, transform.childCount);
         planeTransforms [oddPlaneIndex].Rotate(0, rotvals[0], 0);
-        controlScripts [0].targetFlag = 1;
+        controlScripts [oddPlaneIndex].targetFlag = 1;
         for (int i = 0; i < transform.childCount; i++){
             if (i != oddPlaneIndex){
                 planeTransforms [i].Rotate(0, rotvals[1], 0);

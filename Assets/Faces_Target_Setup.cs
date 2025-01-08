@@ -25,7 +25,7 @@ public class FaceTargetSetup : MonoBehaviour
         controlScripts [0].targetFlag = 1;
         for (int i = 0; i < transform.childCount; i++){
             if (i != oddPlaneIndex){
-                planes [i].GetComponent <Renderer>().material = randommat[1];
+                planeTransforms [i].GetComponent <Renderer>().material = randommat[1];
             }
         }
     }

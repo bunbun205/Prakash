@@ -25,7 +25,7 @@ public class ColorTargetSetup : MonoBehaviour
         controlScripts [0].targetFlag = 1;
         for (int i = 0; i < transform.childCount; i++){
             if (i != oddPlaneIndex){
-                planes [i].GetComponent <Renderer>().material.color = randVal * Color.white;
+                planeTransforms [i].GetComponent <Renderer>().material.color = randVal * Color.white;
             }
         }
     }
