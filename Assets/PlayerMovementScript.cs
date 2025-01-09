@@ -3,6 +3,7 @@ using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 
 public class PlayerMovementScript : MonoBehaviour
 
@@ -11,6 +12,10 @@ public class PlayerMovementScript : MonoBehaviour
     int index = 0;
     public float speed = 0.0f;
     public float dist = 0;
+
+    public bool move = false;
+
+    public GameObject Targets;
     
     void Start()
     {
@@ -30,5 +35,12 @@ public class PlayerMovementScript : MonoBehaviour
         {
             index++;
         }
+
+        Transform target = Targets.transform.GetChild(0);
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
+
+        if (distanceToTarget > 1 || move) {
+            speed = 5;
+        } else speed = 0;
     }
 }
