@@ -35,12 +35,20 @@ public class PlayerMovementScript : MonoBehaviour
         {
             index++;
         }
-
-        Transform target = Targets.transform.GetChild(0);
+       foreach (Transform target in Targets.transform.GetChild){
+        
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
         if (distanceToTarget > 1 || move) {
             speed = 5;
-        } else speed = 0;
+        } 
+        
+        else {
+            speed = 0;
+            move = false;
+        }
+
+        } 
+        
     }
 }
