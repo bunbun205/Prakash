@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class TargetController : MonoBehaviour
@@ -5,6 +6,8 @@ public class TargetController : MonoBehaviour
     public int targetFlag = 0;
     public float Score = 0;
     private int counter = 0; 
+
+    public TMP_Text scoreText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,6 +33,11 @@ public class TargetController : MonoBehaviour
             else {
                 Score += 1;
             }
+
+            PlayerMovementScript player = new PlayerMovementScript();
+            if(!player.move) {
+                player.move = true;
+            }
         }
         
         else {
@@ -37,6 +45,10 @@ public class TargetController : MonoBehaviour
             counter++;
         }
         
+    }
+
+    public void Update() {
+        scoreText.SetText(Score.ToString());
     }
 
 }
