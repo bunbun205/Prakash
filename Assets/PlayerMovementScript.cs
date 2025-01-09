@@ -14,7 +14,7 @@ public class PlayerMovementScript : MonoBehaviour
     public float dist = 0;
 
     public bool move = false;
-
+    public float distanceToTarget = 0.0f;
     public GameObject Targets;
     
     void Start()
@@ -37,7 +37,7 @@ public class PlayerMovementScript : MonoBehaviour
         }
        foreach (Transform target in Targets.transform.GetChild){
         
-        float distanceToTarget = Vector3.Distance(transform.position, target.position);
+        distanceToTarget = Vector3.Distance(transform.position, target.position);
 
         if (distanceToTarget > 1 || move) {
             speed = 5;
