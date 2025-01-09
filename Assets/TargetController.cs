@@ -6,6 +6,7 @@ public class TargetController : MonoBehaviour
     public int targetFlag = 0;
     public float Score = 0;
     private int counter = 0; 
+    private float max distance = 10;
 
     public TMP_Text scoreText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,17 +28,17 @@ public class TargetController : MonoBehaviour
 
         if(targetFlag == 1){
             Debug.Log("Correct option");
+            PlayerMovementScript player = new PlayerMovementScript();
+            if(!player.move) {
+                player.move = true;
+            }
             if (counter == 0){
-                Score += 50;
+                Score += (40/(max distance - 1)) * player.distanceToTarget;
             }
             else {
                 Score += 1;
             }
 
-            PlayerMovementScript player = new PlayerMovementScript();
-            if(!player.move) {
-                player.move = true;
-            }
         }
         
         else {
