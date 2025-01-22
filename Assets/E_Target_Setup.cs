@@ -5,9 +5,14 @@ using System.Collections.Generic;
 public class ETargetSetup : MonoBehaviour
 {
 
+    public GameObject player;
+    private PlayerMovementScript script;
+    public bool clicked = false;
+
     void Start()
     {
-
+        player = GameObject.Find("Player");
+        script = player.GetComponent<PlayerMovementScript>();
         List <int> rotationVals = new List<int> {0, 90, 180, 270};
         System.Random Rnd = new System.Random ();
         List <int> rotvals = rotationVals.OrderBy (x=> Rnd.Next()).Take(2).ToList ();
@@ -25,14 +30,19 @@ public class ETargetSetup : MonoBehaviour
             if (i != oddPlaneIndex){
                 planeTransforms [i].Rotate(0, rotvals[1], 0);
             }
+
+            Debug.Log(planeTransforms[i].forward);
         }
 
         
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update() {
+        float distance = Vector3.Distance(transform.position, player.transform.position);
+        if (distance <= 1 && !clicked) {
+            script.speed = 0;
+        }
+
     }
 }
