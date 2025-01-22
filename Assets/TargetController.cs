@@ -1,32 +1,57 @@
 using TMPro;
-using UnityEngine;
 
+
+using UnityEngine;
+using UnityEngine.SceneManagement;
 public class TargetController : MonoBehaviour
 {
+
     public int targetFlag = 0;
     public float Score = 0;
     private int counter = 0; 
 
     public TMP_Text scoreText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private GameObject player;
+    private PlayerMovementScript playerScript;
+    private ColorTargetSetup colorTargetScript;
+    private ETargetSetup eTargetScript;
+    private FaceTargetSetup facesTargetScript;
+    Scene currentScene;
+
+    public void Start()
     {
-        
+        player = GameObject.Find("Player");
+        playerScript = player.GetComponent<PlayerMovementScript>();
+        currentScene = SceneManager.GetActiveScene();
+        if(currentScene.name.Contains("Colors")) {
+            colorTargetScript = transform.parent.GetComponent<ColorTargetSetup>();
+        } else if(currentScene.name.Contains("Faces")) {
+            facesTargetScript = transform.parent.GetComponent<FaceTargetSetup>();
+        } else {
+            eTargetScript = transform.parent.GetComponent<ETargetSetup>();
+        }
     }
 
-    // Update is called once per frame
-
-    public void onPointerEnter() {
-        Debug.Log("enter");
+    public void OnPointerEnter()
+    {
+        // Debug.Log(targetFlag);
+    }
+    public void OnPointerExit()
+    {
+        // Debug.Log("exit");
     }
 
-    public void onPointerExit() {
-        Debug.Log("exit");
-    }
-    public void OnPointerClick(){
-
+    public void OnPointerClick()
+    {
         if(targetFlag == 1){
-            Debug.Log("Correct option");
+
+            playerScript.audioSource.PlayOneShot(playerScript.rightAnswerSFX);
+
+            playerScript.speed = 1;
+            if(colorTargetScript != null) colorTargetScript.clicked = true;
+            else if(facesTargetScript != null) facesTargetScript.clicked = true;
+            else eTargetScript.clicked = true;
+
             if (counter == 0){
                 Score += 50;
             }
@@ -34,17 +59,12 @@ public class TargetController : MonoBehaviour
                 Score += 1;
             }
 
-            PlayerMovementScript player = new PlayerMovementScript();
-            if(!player.move) {
-                player.move = true;
-            }
         }
         
         else {
-            Debug.Log("Wrong option");
+            playerScript.audioSource.PlayOneShot(playerScript.wrongAnswerSFX);
             counter++;
         }
-        
     }
 
     public void Update() {

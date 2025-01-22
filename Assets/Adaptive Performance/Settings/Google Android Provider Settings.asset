@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Logging: 1
   m_AutomaticPerformanceModeEnabled: 1
-  m_AutomaticGameModeEnabled: 0
+  m_AutomaticGameModeEnabled: 1
   m_EnableBoostOnStartup: 1
-  m_StatsLoggingFrequencyInFrames: 50
+  m_StatsLoggingFrequencyInFrames: 5
   m_IndexerSettings:
     m_Active: 1
     m_ThermalActionDelay: 10

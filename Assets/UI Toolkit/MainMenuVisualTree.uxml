@@ -1,0 +1,14 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=6f7743f0bc15f084ab554240c84db75e&amp;type=3#MainMenuStyle" />
+    <engine:VisualElement name="Container" style="flex-grow: 1; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; padding-top: 32px; background-image: url(&quot;project://database/Assets/background.png?fileID=2800000&amp;guid=154f1331577347e41920fef5f9139de4&amp;type=3#background&quot;);">
+        <engine:VisualElement name="Header" style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: space-around; height: 5px; align-self: stretch; font-size: 33px;">
+            <engine:Label text="Main Menu" name="MainMenu" class="header" style="font-size: 135px; -unity-font-style: normal; -unity-font-definition: url(&quot;project://database/Assets/FPSFont/FPS%20Gaming%20Font/Square-Black.ttf?fileID=12800000&amp;guid=d7cffddcbc0cc8f4ebe6e28eb9804082&amp;type=3#Square-Black&quot;); margin-left: 565px; margin-right: 61px;" />
+            <engine:Button name="Settings" class="uibutton" style="background-image: url(&quot;project://database/Assets/hamburger.png?fileID=2800000&amp;guid=00f4e4db774779745b1414f0edf7a61c&amp;type=3#hamburger&quot;); background-color: rgba(188, 188, 188, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="ButtonContainer" style="flex-grow: 1; -unity-text-align: middle-center; white-space: nowrap; height: 600px; align-items: center; justify-content: space-around; align-self: stretch; flex-direction: row;">
+            <engine:Button name="E" class="button" style="-unity-text-align: middle-center; background-image: url(&quot;project://database/Assets/rect18.png?fileID=2800000&amp;guid=87ad811cd1898df4791169303dafc2b7&amp;type=3#rect18&quot;);" />
+            <engine:Button name="Faces" class="button" style="background-image: url(&quot;project://database/Assets/Images/D12.jpg?fileID=2800000&amp;guid=01c258e07d5f347ceacf00fca12410a8&amp;type=3#D12&quot;);" />
+            <engine:Button name="Colors" class="button" style="background-image: url(&quot;project://database/Assets/colorgrid.png?fileID=2800000&amp;guid=f6c7a5015a5e6514cbc93857c98493ec&amp;type=3#colorgrid&quot;);" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
