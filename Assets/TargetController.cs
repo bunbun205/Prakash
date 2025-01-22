@@ -9,6 +9,7 @@ public class TargetController : MonoBehaviour
     public int targetFlag = 0;
     public float Score = 0;
     private int counter = 0; 
+    private float maxdistance = 10;
 
     public TMP_Text scoreText;
     private GameObject player;
