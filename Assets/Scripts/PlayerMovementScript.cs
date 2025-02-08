@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 public class PlayerMovementScript : MonoBehaviour
 
 {
@@ -45,5 +46,7 @@ public class PlayerMovementScript : MonoBehaviour
         {
             waypointIndex++;
         }
+
+        if (Vector3.Distance(transform.position, endScreen.transform.position) <= 1) speed = 0.0f;
     }
 }
