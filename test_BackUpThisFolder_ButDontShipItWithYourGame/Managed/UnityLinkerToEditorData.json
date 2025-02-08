@@ -19,10 +19,7 @@
           {
             "name": "NavMeshSettings",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -68,10 +65,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -79,9 +73,7 @@
           {
             "name": "AudioClip",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -89,10 +81,7 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -106,9 +95,7 @@
           {
             "name": "AudioResource",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -116,9 +103,7 @@
           {
             "name": "AudioSource",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -149,10 +134,7 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -172,9 +154,7 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -194,10 +174,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -205,10 +182,7 @@
           {
             "name": "FlareLayer",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -222,10 +196,7 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -249,20 +220,9 @@
             "icon": null
           },
           {
-            "name": "LODGroup",
-            "scenes": [
-              "Assets/Scenes/Entrypoint.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -270,10 +230,7 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -286,9 +243,7 @@
           },
           {
             "name": "LightProbes",
-            "scenes": [
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -301,10 +256,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -324,10 +276,7 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -335,10 +284,7 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -346,10 +292,7 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -357,10 +300,7 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -368,10 +308,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -385,10 +322,7 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -396,10 +330,7 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -431,10 +362,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -448,10 +376,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -483,10 +408,7 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -512,10 +434,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -891,9 +810,7 @@
         "dependencies": [
           {
             "name": "BoxCollider",
-            "scenes": [
-              "Assets/Scenes/Entrypoint.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -911,17 +828,16 @@
           },
           {
             "name": "Collider",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -941,9 +857,7 @@
           {
             "name": "SphereCollider",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1225,10 +1139,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1277,10 +1188,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1288,7 +1196,7 @@
           {
             "name": "CanvasGroup",
             "scenes": [
-              "Assets/Scenes/Entrypoint.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1296,10 +1204,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/Colors/Colors_Level_1.unity",
-              "Assets/Scenes/E/E_Level_1.unity",
-              "Assets/Scenes/Entrypoint.unity",
-              "Assets/Scenes/Faces/Faces_Level_1.unity"
+              "Assets/Scenes/Colors/Colors_Level_3.unity"
             ],
             "dependencyType": 0,
             "icon": null

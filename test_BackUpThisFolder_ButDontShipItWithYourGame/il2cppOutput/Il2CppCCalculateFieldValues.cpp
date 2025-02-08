@@ -6307,10 +6307,6 @@ struct MonoTODOAttribute_t4ADEF905CF6BAC412479036B495F2C48B1CEE76D  : public Att
 {
 	String_t* ___comment;
 };
-struct MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D  : public Manipulator_tD5727ABA1F5AD1A50927212FAEB090E6BBCB4EBE
-{
-	List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* ___U3CactivatorsU3Ek__BackingField;
-};
 struct NotNullWhenAttribute_t92EF646D689C17FD7F06267397C6BE502C62EA06  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 	bool ___U3CReturnValueU3Ek__BackingField;
@@ -11650,10 +11646,6 @@ struct PlatformID_t9C84323A65D2A39DBEB7A922286A9E9836B8BECA
 {
 	int32_t ___value__;
 };
-struct PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72  : public MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D
-{
-	int32_t ___m_CurrentPointerId;
-};
 struct Position_t066B59B8657DAFCFBEDDAE8CBCE96E88796E1319 
 {
 	int32_t ___value__;
@@ -13590,49 +13582,6 @@ struct ClassInterfaceAttribute_t80A22EA49AEE8A331C5412515685CBE522A7FAB5  : publ
 {
 	int32_t ____val;
 };
-struct Clickable_tED3E313565F64BDF5DA9D3FE0FEFFD0E17E53834  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
-{
-	Action_1_t741CBBCB28E18BDBDEED4AE3BD7DBEEEA526DA43* ___clickedWithEventInfo;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___clicked;
-	int64_t ___m_Delay;
-	int64_t ___m_Interval;
-	bool ___U3CactiveU3Ek__BackingField;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3ClastMousePositionU3Ek__BackingField;
-	int32_t ___m_ActivePointerId;
-	bool ___m_AcceptClicksIfDisabled;
-	RuntimeObject* ___m_Repeater;
-	RuntimeObject* ___m_PendingActivePseudoStateReset;
-};
-struct ColumnMover_tF8B270BEC7C26ECD780F9EEAE6EC2A99BDC6986F  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
-{
-	float ___m_StartPos;
-	float ___m_LastPos;
-	bool ___m_Active;
-	bool ___m_Moving;
-	bool ___m_Cancelled;
-	MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* ___m_Header;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
-	MultiColumnHeaderColumnMoveLocationPreview_tA46A9C48704DECDEA2D3D32312F6A3C71F655FA7* ___m_LocationPreviewElement;
-	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_ColumnToMove;
-	float ___m_ColumnToMovePos;
-	float ___m_ColumnToMoveWidth;
-	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_DestinationColumn;
-	bool ___m_MoveBeforeDestination;
-	ColumnLayout_tF0A72BFB169B3329F9720AF33516EBAFAB4400B4* ___U3CcolumnLayoutU3Ek__BackingField;
-	Action_1_t9695AED713CA91CBC7D63B1EED2BDF6D6C9C33F9* ___activeChanged;
-	Action_1_t9695AED713CA91CBC7D63B1EED2BDF6D6C9C33F9* ___movingChanged;
-};
-struct ColumnResizer_tA24C857E9E5A60F51969581DA49CE869DA2BF51A  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
-{
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Start;
-	bool ___m_Active;
-	bool ___m_Resizing;
-	MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* ___m_Header;
-	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_Column;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
-	ColumnLayout_tF0A72BFB169B3329F9720AF33516EBAFAB4400B4* ___U3CcolumnLayoutU3Ek__BackingField;
-	bool ___U3CpreviewU3Ek__BackingField;
-};
 struct Columns_t487EAF3B634F6D919D58F1927099A8883964831B  : public RuntimeObject
 {
 	RuntimeObject* ___m_Columns;
@@ -13711,10 +13660,6 @@ struct ConsoleKeyInfo_t84640C60F53D0F6946B147ADAAF0366BBF1DE900_marshaled_com
 	uint8_t ____keyChar;
 	int32_t ____key;
 	int32_t ____mods;
-};
-struct ContextualMenuManipulator_t87300AE97355BCEEF2E0404D2B9CD164FF784EE9  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
-{
-	Action_1_t02490755BFDD800256CBFAE0CBD4B57196006ABD* ___m_MenuBuilder;
 };
 struct CultureAwareComparer_t5822A6535A6EB4C448D1B7736067D1188BAEE8CD  : public StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06
 {
@@ -15747,25 +15692,6 @@ struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0  : publi
 struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
 {
 };
-struct TabDragger_tBCAA1E198307DD571687A180BA89FEFF328018A1  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
-{
-	float ___m_StartPos;
-	float ___m_LastPos;
-	bool ___m_Moving;
-	bool ___m_Cancelled;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_Header;
-	TabView_t3B7B40580E4AE714A5766774568BA256426F3252* ___m_TabView;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
-	TabDragLocationPreview_tAB80E5C0B12B67B5CE830D5283D3DCB4DC058BDE* ___m_LocationPreviewElement;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_TabToMove;
-	float ___m_TabToMovePos;
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_DestinationTab;
-	bool ___m_MoveBeforeDestination;
-	int32_t ___m_DraggingPointerId;
-	TabLayout_t4582FFA5E8E25353E8C10043526DAD2AB5FEBE43* ___U3CtabLayoutU3Ek__BackingField;
-	bool ___U3CactiveU3Ek__BackingField;
-	bool ___U3CisVerticalU3Ek__BackingField;
-};
 struct TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0  : public RuntimeObject
 {
 	CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED ___m_defaultCancellationToken;
@@ -15832,14 +15758,6 @@ struct TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E
 {
 	float ___m_Value;
 	int32_t ___m_Unit;
-};
-struct TwoPaneSplitViewResizer_t2F90BA5231BD6B25F7442A86359B78004B73CEF5  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Start;
-	bool ___m_Active;
-	TwoPaneSplitView_tB474821CB57A1FF40CA9ADB5360072A151744A67* ___m_SplitView;
-	int32_t ___m_Direction;
-	float ___m_Delta;
 };
 struct Type_t  : public MemberInfo_t
 {
@@ -17493,6 +17411,11 @@ struct MeshGenerator_t22961EB21257C82AF8E8CF5056B80FCA6B850B25  : public Runtime
 	List_1_tC96558A2A77DD595C724D43BFE409C769AB0FA1E* ___m_TesselationJobParameters;
 	bool ___U3CdisposedU3Ek__BackingField;
 };
+struct MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D  : public Manipulator_tD5727ABA1F5AD1A50927212FAEB090E6BBCB4EBE
+{
+	List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* ___U3CactivatorsU3Ek__BackingField;
+	ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 ___m_currentActivator;
+};
 struct OSSpecificSynchronizationContext_tFD404E39B16A25CE784AE12434CE8BF49C2FB030  : public SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0
 {
 	RuntimeObject* ___m_OSSynchronizationContext;
@@ -18789,6 +18712,10 @@ struct PathVisitor_tCD0947C41CDBDB774D22D560E5FFA01EF61C4446  : public RuntimeOb
 	bool ___U3CReadonlyVisitU3Ek__BackingField;
 	int32_t ___U3CReturnCodeU3Ek__BackingField;
 };
+struct PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72  : public MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D
+{
+	int32_t ___m_CurrentPointerId;
+};
 struct PropertyPathInfo_t4F516150FF223D10399DC8E09E5DA06F616C124C 
 {
 	PropertyPath_tA523CA2740853534DF6C009C588464B45A6D0A79 ___propertyPath;
@@ -19596,6 +19523,53 @@ struct BindingTarget_tC2F2D591FF13839801DF202C47390492A9934512_marshaled_com
 	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___element;
 	BindingId_t8BBB6188CD126EACCA07816C78760E92DC16620E_marshaled_com ___bindingId;
 };
+struct Clickable_tED3E313565F64BDF5DA9D3FE0FEFFD0E17E53834  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
+{
+	Action_1_t741CBBCB28E18BDBDEED4AE3BD7DBEEEA526DA43* ___clickedWithEventInfo;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___clicked;
+	int64_t ___m_Delay;
+	int64_t ___m_Interval;
+	bool ___U3CactiveU3Ek__BackingField;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3ClastMousePositionU3Ek__BackingField;
+	int32_t ___m_ActivePointerId;
+	bool ___m_AcceptClicksIfDisabled;
+	RuntimeObject* ___m_Repeater;
+	RuntimeObject* ___m_PendingActivePseudoStateReset;
+};
+struct ColumnMover_tF8B270BEC7C26ECD780F9EEAE6EC2A99BDC6986F  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
+{
+	float ___m_StartPos;
+	float ___m_LastPos;
+	bool ___m_Active;
+	bool ___m_Moving;
+	bool ___m_Cancelled;
+	MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* ___m_Header;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
+	MultiColumnHeaderColumnMoveLocationPreview_tA46A9C48704DECDEA2D3D32312F6A3C71F655FA7* ___m_LocationPreviewElement;
+	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_ColumnToMove;
+	float ___m_ColumnToMovePos;
+	float ___m_ColumnToMoveWidth;
+	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_DestinationColumn;
+	bool ___m_MoveBeforeDestination;
+	ColumnLayout_tF0A72BFB169B3329F9720AF33516EBAFAB4400B4* ___U3CcolumnLayoutU3Ek__BackingField;
+	Action_1_t9695AED713CA91CBC7D63B1EED2BDF6D6C9C33F9* ___activeChanged;
+	Action_1_t9695AED713CA91CBC7D63B1EED2BDF6D6C9C33F9* ___movingChanged;
+};
+struct ColumnResizer_tA24C857E9E5A60F51969581DA49CE869DA2BF51A  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Start;
+	bool ___m_Active;
+	bool ___m_Resizing;
+	MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* ___m_Header;
+	Column_tD686764EBBB4AFE8473E2464D0039885E3A2EC6A* ___m_Column;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
+	ColumnLayout_tF0A72BFB169B3329F9720AF33516EBAFAB4400B4* ___U3CcolumnLayoutU3Ek__BackingField;
+	bool ___U3CpreviewU3Ek__BackingField;
+};
+struct ContextualMenuManipulator_t87300AE97355BCEEF2E0404D2B9CD164FF784EE9  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
+{
+	Action_1_t02490755BFDD800256CBFAE0CBD4B57196006ABD* ___m_MenuBuilder;
+};
 struct ContextualMenuPopulateEvent_t72C856D9B3951E3AA5901442A98BF6DE7F4258FB  : public MouseEventBase_1_t668C64269EF6F77113679FD1210F50818CA7E12E
 {
 	DropdownMenu_tCC0483D2EB24641C3ADAE4BC122C92ABCFB186D2* ___U3CmenuU3Ek__BackingField;
@@ -19687,12 +19661,39 @@ struct SignatureArrayType_t2363B762F8C412C7C4054B75639099E0DFA8B915  : public Si
 	int32_t ____rank;
 	bool ____isMultiDim;
 };
+struct TabDragger_tBCAA1E198307DD571687A180BA89FEFF328018A1  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
+{
+	float ___m_StartPos;
+	float ___m_LastPos;
+	bool ___m_Moving;
+	bool ___m_Cancelled;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_Header;
+	TabView_t3B7B40580E4AE714A5766774568BA256426F3252* ___m_TabView;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_PreviewElement;
+	TabDragLocationPreview_tAB80E5C0B12B67B5CE830D5283D3DCB4DC058BDE* ___m_LocationPreviewElement;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_TabToMove;
+	float ___m_TabToMovePos;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_DestinationTab;
+	bool ___m_MoveBeforeDestination;
+	int32_t ___m_DraggingPointerId;
+	TabLayout_t4582FFA5E8E25353E8C10043526DAD2AB5FEBE43* ___U3CtabLayoutU3Ek__BackingField;
+	bool ___U3CactiveU3Ek__BackingField;
+	bool ___U3CisVerticalU3Ek__BackingField;
+};
 struct TrackedDevice_t9B8AC60AAD52E906174449ED57660F3F8A3599E9  : public InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B
 {
 	IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___U3CtrackingStateU3Ek__BackingField;
 	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CisTrackedU3Ek__BackingField;
 	Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___U3CdevicePositionU3Ek__BackingField;
 	QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___U3CdeviceRotationU3Ek__BackingField;
+};
+struct TwoPaneSplitViewResizer_t2F90BA5231BD6B25F7442A86359B78004B73CEF5  : public PointerManipulator_t54685840D83869016F04FD137BCC1B07016B2E72
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Start;
+	bool ___m_Active;
+	TwoPaneSplitView_tB474821CB57A1FF40CA9ADB5360072A151744A67* ___m_SplitView;
+	int32_t ___m_Direction;
+	float ___m_Delta;
 };
 struct UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -23901,6 +23902,11 @@ struct BindingId_t8BBB6188CD126EACCA07816C78760E92DC16620E_StaticFields
 struct DataBinding_t4AEDF779EB49F9E11B45F99385482936B2FC34DA_StaticFields
 {
 	MethodInfo_t* ___s_UpdateUIMethodInfo;
+};
+struct InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_StaticFields
+{
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_InputActionEnableProfilerMarker;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_InputActionDisableProfilerMarker;
 };
 struct LayoutCacheData_t1C9D16AB3B4EF0EC7A51422286D2E84ABBDEEA92_StaticFields
 {
@@ -28757,9 +28763,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2052[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2053[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2055[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2055[2] = 
 {
-	static_cast<int32_t>(offsetof(MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D, ___U3CactivatorsU3Ek__BackingField)),};
+	static_cast<int32_t>(offsetof(MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D, ___U3CactivatorsU3Ek__BackingField)),static_cast<int32_t>(offsetof(MouseManipulator_tE6C609D476BDF311E2934791E620CF833BB4097D, ___m_currentActivator)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2056[4] = 
 {
 	static_cast<int32_t>(offsetof(MeshWriteDataInterface_t4B491D82F64E6765793116BF09FE1DF58C42F61F, ___vertices)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MeshWriteDataInterface_t4B491D82F64E6765793116BF09FE1DF58C42F61F, ___indices)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MeshWriteDataInterface_t4B491D82F64E6765793116BF09FE1DF58C42F61F, ___vertexCount)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MeshWriteDataInterface_t4B491D82F64E6765793116BF09FE1DF58C42F61F, ___indexCount)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
@@ -30554,9 +30560,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2987[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2988[2] = 
 {
 	static_cast<int32_t>(offsetof(CallbackContext_tB251EE41F509C6E8A6B05EC97C029A45DF4F5FA8, ___m_State)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(CallbackContext_tB251EE41F509C6E8A6B05EC97C029A45DF4F5FA8, ___m_ActionIndex)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2989[18] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2989[20] = 
 {
-	static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Name)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Type)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ExpectedControlType)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Id)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Processors)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Interactions)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_SingletonActionBindings)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Flags)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_BindingMask)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_BindingsStartIndex)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_BindingsCount)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ControlStartIndex)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ControlCount)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ActionIndexInState)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ActionMap)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_OnStarted)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_OnCanceled)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_OnPerformed)),};
+	static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_StaticFields, ___k_InputActionEnableProfilerMarker)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD_StaticFields, ___k_InputActionDisableProfilerMarker)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Name)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Type)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ExpectedControlType)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Id)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Processors)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Interactions)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_SingletonActionBindings)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_Flags)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_BindingMask)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_BindingsStartIndex)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_BindingsCount)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ControlStartIndex)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ControlCount)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ActionIndexInState)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_ActionMap)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_OnStarted)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_OnCanceled)),static_cast<int32_t>(offsetof(InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD, ___m_OnPerformed)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2990[3] = 
 {
 	static_cast<int32_t>(offsetof(WriteFileJson_tD4B00B34DD57DE1DE1624AE3D68426B44D75860B, ___name)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteFileJson_tD4B00B34DD57DE1DE1624AE3D68426B44D75860B, ___maps)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteFileJson_tD4B00B34DD57DE1DE1624AE3D68426B44D75860B, ___controlSchemes)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
