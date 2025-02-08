@@ -15,7 +15,7 @@ public class UI_Buttons : MonoBehaviour
     public void OnPointerExit() { }
 
     public void OnPointerClick() {
-        switch(transform.gameObject.name)
+        switch(transform.parent.gameObject.name)
         {
             case "Start":
                 player.speed = 1.0f;
