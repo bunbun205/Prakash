@@ -5,19 +5,26 @@ using System.Collections.Generic;
 public class FaceTargetSetup : MonoBehaviour
 {
 
-    public List <Material> FaceMaterials;
+    private List<Material> FaceMaterials;
     public GameObject player;
     private PlayerMovementScript script;
+    private FaceMaterials facematscript;
     public bool clicked = false;
     public int counter = 0;
     public float distance = 0;
 
-    void Start()
+    void Awake()
     {
         player = GameObject.Find("Player");
         script = player.GetComponent<PlayerMovementScript>();
+        facematscript = transform.parent.gameObject.GetComponent<FaceMaterials>();
+    }
+
+    void Start()
+    {
         System.Random Rnd = new System.Random ();
-        List <Material> randommat = FaceMaterials.OrderBy (x=> Rnd.Next()).Take(2).ToList ();
+        FaceMaterials = facematscript.FaceMats.OrderBy(x=>Rnd.Next()).Take(10).ToList();
+        List < Material > randommat = FaceMaterials.OrderBy (x=> Rnd.Next()).Take(2).ToList ();
         List <Transform> planeTransforms = new List<Transform> ();
         List <TargetController> controlScripts = new List<TargetController> ();
         for (int i = 0; i < transform.childCount; i++){

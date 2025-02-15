@@ -38,6 +38,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Faces/Faces_Level_1.unity
     guid: 33389b06df23dbd4aab6654f1ee1ffb9
+  - enabled: 1
+    path: Assets/Scenes/Faces/Faces_Level_2.unity
+    guid: 828813f8d00f3c345939813e05224b46
+  - enabled: 1
+    path: Assets/Scenes/Faces/Faces_Level_3.unity
+    guid: 2e5f658582fb39545b9bd037b0843008
+  - enabled: 1
+    path: Assets/Scenes/Faces/Faces_Level_4.unity
+    guid: 7b927128384a2494a82c1306954e1b46
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 7cdc382c265a060728388b1498a767f2, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: f008daf68e864355fa5eeace57937706, type: 2}

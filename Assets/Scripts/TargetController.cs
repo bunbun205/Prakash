@@ -12,8 +12,6 @@ public class TargetController : MonoBehaviour
     private ColorTargetSetup colorTargetScript;
     private ETargetSetup eTargetScript;
     private FaceTargetSetup facesTargetScript;
-    private Feedback feedback;
-
     Scene currentScene;
 
     public void Start()
@@ -21,7 +19,6 @@ public class TargetController : MonoBehaviour
         player = GameObject.Find("Player");
         playerScript = player.GetComponent<PlayerMovementScript>();
         currentScene = SceneManager.GetActiveScene();
-        feedback = GameObject.Find("FeedbackManager").GetComponent<Feedback>();
         if(currentScene.name.Contains("Colors")) {
             colorTargetScript = transform.parent.GetComponent<ColorTargetSetup>();
             facesTargetScript = null;
@@ -55,7 +52,6 @@ public class TargetController : MonoBehaviour
 
             playerScript.audioSource.PlayOneShot(playerScript.rightAnswerSFX);
 
-            bool firstHit = false;
             string activeScene = SceneManager.GetActiveScene().name;
             float distanceToTarget = 0;
 
@@ -66,13 +62,11 @@ public class TargetController : MonoBehaviour
                 if (colorTargetScript.counter == 0)
                 {
                     Score += (40/19) * (colorTargetScript.distance - 1) + 10;
-                    firstHit = true;
                 }
                 else
                 {
                     Score += (9/19) * (colorTargetScript.distance - 1) + 1;
                     colorTargetScript.counter = 0;
-                    firstHit = false;
                 }
                 distanceToTarget = colorTargetScript.distance;
             }
@@ -82,13 +76,11 @@ public class TargetController : MonoBehaviour
                 if (facesTargetScript.counter == 0)
                 {
                     Score += (40 / 19) * (facesTargetScript.distance - 1) + 10;
-                    firstHit = true;
                 }
                 else
                 {
                     Score += (9 / 19) * (facesTargetScript.distance - 1) + 1;
                     facesTargetScript.counter = 0;
-                    firstHit = false;
                 }
                 distanceToTarget = facesTargetScript.distance;
             }
@@ -98,18 +90,15 @@ public class TargetController : MonoBehaviour
                 if (eTargetScript.counter == 0)
                 {
                     Score += (40 / 19) * (eTargetScript.distance - 1) + 10;
-                    firstHit = true;
                 }
                 else
                 {
                     Score += (9 / 19) * (eTargetScript.distance - 1) + 1;
                     eTargetScript.counter = 0;
-                    firstHit = false;
                 }
                 distanceToTarget = eTargetScript.distance;
             }
 
-            feedback.SubmitFeedback(activeScene, distanceToTarget.ToString(), firstHit ? "Yes" : "No");
         }
         
         else {
@@ -131,7 +120,6 @@ public class TargetController : MonoBehaviour
                 eTargetScript.counter++;
                 distanceToTarget = eTargetScript.distance;
             }
-            feedback.SubmitFeedback(activeScene, distanceToTarget.ToString(), "Missed");
         }
     }
 
