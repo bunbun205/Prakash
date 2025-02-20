@@ -16,6 +16,7 @@ public class DataManagement : MonoBehaviour
     public string userID;
     public string mode;
     public int numTarget;
+    public string stimulus;
     DatabaseReference dbRef;
 
     public void Awake()
@@ -31,7 +32,8 @@ public class DataManagement : MonoBehaviour
         DatabaseReference newEntryRef = dbRef
         .Child("users")
         .Child(userID)
-        .Child(mode)  // New mode row if it doesn't exist
+        .Child(mode)
+        .Child(stimulus)
         .Child("Target " + numTarget.ToString()); // New target under mode
 
         newEntryRef.SetRawJsonValueAsync(json).ContinueWith(task =>
