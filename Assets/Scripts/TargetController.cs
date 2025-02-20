@@ -6,16 +6,18 @@ public class TargetController : MonoBehaviour
 
     public int targetFlag = 0;
     public float Score = 0;
-    public TMP_Text scoreText;
+    //public TMP_Text scoreText;
     private GameObject player;
     private PlayerMovementScript playerScript;
     private ColorTargetSetup colorTargetScript;
     private ETargetSetup eTargetScript;
     private FaceTargetSetup facesTargetScript;
     Scene currentScene;
+    private DataManagement dbmngr;
 
     public void Start()
     {
+        dbmngr = GameObject.Find("DataManager").GetComponent<DataManagement>().dbmgr;
         player = GameObject.Find("Player");
         playerScript = player.GetComponent<PlayerMovementScript>();
         currentScene = SceneManager.GetActiveScene();
@@ -48,13 +50,16 @@ public class TargetController : MonoBehaviour
 
     public void OnPointerClick()
     {
-        if(targetFlag == 1){
+        Parameters param = dbmngr.param;
+
+        dbmngr.mode = SceneManager.GetActiveScene().name;
+        dbmngr.numTarget = transform.parent.GetSiblingIndex();
+
+        if (targetFlag == 1){
+
+            param.hit = "correct hit";
 
             playerScript.audioSource.PlayOneShot(playerScript.rightAnswerSFX);
-
-            string activeScene = SceneManager.GetActiveScene().name;
-            float distanceToTarget = 0;
-
             playerScript.speed = 1;
             if (colorTargetScript != null)
             {
@@ -68,7 +73,7 @@ public class TargetController : MonoBehaviour
                     Score += (9/19) * (colorTargetScript.distance - 1) + 1;
                     colorTargetScript.counter = 0;
                 }
-                distanceToTarget = colorTargetScript.distance;
+                param.distanceToTarget = colorTargetScript.distance;
             }
             else if (facesTargetScript != null)
             {
@@ -82,7 +87,7 @@ public class TargetController : MonoBehaviour
                     Score += (9 / 19) * (facesTargetScript.distance - 1) + 1;
                     facesTargetScript.counter = 0;
                 }
-                distanceToTarget = facesTargetScript.distance;
+                param.distanceToTarget = facesTargetScript.distance;
             }
             else
             {
@@ -96,35 +101,37 @@ public class TargetController : MonoBehaviour
                     Score += (9 / 19) * (eTargetScript.distance - 1) + 1;
                     eTargetScript.counter = 0;
                 }
-                distanceToTarget = eTargetScript.distance;
+                param.distanceToTarget = eTargetScript.distance;
             }
+
+            param.score = Score;
 
         }
         
         else {
-            string activeScene = SceneManager.GetActiveScene().name;
-            float distanceToTarget = 0;
-
+            param.hit = "incorrect hit";
             playerScript.audioSource.PlayOneShot(playerScript.wrongAnswerSFX);
             if (colorTargetScript != null)
             {
                 colorTargetScript.counter++;
-                distanceToTarget = colorTargetScript.distance;
+                param.distanceToTarget = colorTargetScript.distance;
             }
             else if (facesTargetScript != null)
             {
                 facesTargetScript.counter++;
-                distanceToTarget = facesTargetScript.distance;
+                param.distanceToTarget = facesTargetScript.distance;
             }
             else {
                 eTargetScript.counter++;
-                distanceToTarget = eTargetScript.distance;
+                param.distanceToTarget = eTargetScript.distance;
             }
         }
+
+        dbmngr.SendData();
     }
 
     public void Update() {
-        scoreText.SetText(Score.ToString());
+        //scoreText.SetText(Score.ToString());
     }
 
 }

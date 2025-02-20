@@ -1,0 +1,3 @@
+# Android Resolver Properties Start
+android.enableJetifier=true
+android.useAndroidX=true

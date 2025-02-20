@@ -42,26 +42,26 @@ public class ColorSetter : MonoBehaviour
         switch (sceneName)
         {
             case "Colors_Level_1":
-                minSaturation = 200;
-                maxSaturation = 256;
+                minSaturation = 100;
+                maxSaturation = 150;
                 minValue = 150;
                 maxValue = 250;
                 break;
             case "Colors_Level_2":
-                minSaturation = 150;
-                maxSaturation = 200;
+                minSaturation = 75;
+                maxSaturation = 100;
                 minValue = 150;
                 maxValue = 200;
                 break;
             case "Colors_Level_3":
-                minSaturation = 100;
-                maxSaturation = 150;
+                minSaturation = 50;
+                maxSaturation = 75;
                 minValue = 100;
                 maxValue = 200;
                 break;
             case "Colors_Level_4":
-                minSaturation = 50;
-                maxSaturation = 100;
+                minSaturation = 25;
+                maxSaturation = 50;
                 minValue = 100;
                 maxValue = 150;
                 break;

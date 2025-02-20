@@ -141,7 +141,12 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: bfe0b8fabf4eaab40acaf6d64ffcc5fc, type: 2}
+  - {fileID: -1382475004153043611, guid: 1cf3fcca1c03ca1459b8c9569701aee2, type: 2}
+  - {fileID: 11400000, guid: 8afb6d8094958c835be3aea8181319fc, type: 2}
+  - {fileID: 11400000, guid: 7cdc382c265a060728388b1498a767f2, type: 2}
+  - {fileID: 4169248784969995494, guid: f008daf68e864355fa5eeace57937706, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -173,7 +178,7 @@ PlayerSettings:
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 26
-  AndroidTargetSdkVersion: 33
+  AndroidTargetSdkVersion: 34
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -260,7 +265,7 @@ PlayerSettings:
   useCustomLauncherGradleManifest: 0
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 1
-  useCustomGradleSettingsTemplate: 0
+  useCustomGradleSettingsTemplate: 1
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 2
   AndroidSplashScreenScale: 0

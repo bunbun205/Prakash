@@ -168,7 +168,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1262809
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -293,7 +292,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &58904966
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -418,7 +416,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &60232460
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -594,7 +591,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &105068847
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1081,7 +1077,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &260901865
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1358,7 +1353,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &361272225
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1534,7 +1528,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &392613681
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1734,7 +1727,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!1 &414857828
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,7 +2115,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &471273847
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2829,7 +2820,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &735470447
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2954,7 +2944,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &748899219
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3260,7 +3249,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &847915447
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3511,7 +3499,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!1 &907292807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3998,7 +3985,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1124920960
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4353,7 +4339,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1225793986
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4478,7 +4463,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1272382872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4678,7 +4662,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1277097098
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4955,7 +4938,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1389524105
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5080,7 +5062,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1448208169
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5707,7 +5688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1524178694
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6070,7 +6050,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1689077473
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6333,7 +6312,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1711327002
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6533,7 +6511,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!1 &1799549994
 GameObject:
   m_ObjectHideFlags: 0
@@ -6713,7 +6690,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1839221157
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7042,7 +7018,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1893387198
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7315,7 +7290,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1950520322
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7440,7 +7414,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1958956843
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7565,7 +7538,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &1975898698
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7690,7 +7662,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &2014152506
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7859,7 +7830,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlag: 0
   Score: 0
-  scoreText: {fileID: 1556333757}
 --- !u!64 &2088272935
 MeshCollider:
   m_ObjectHideFlags: 0
