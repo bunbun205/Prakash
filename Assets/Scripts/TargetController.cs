@@ -53,7 +53,7 @@ public class TargetController : MonoBehaviour
         Parameters param = dbmngr.param;
 
         dbmngr.mode = SceneManager.GetActiveScene().name;
-        dbmngr.numTarget = transform.parent.GetSiblingIndex();
+        dbmngr.numTarget = transform.parent.GetSiblingIndex() + 1;
 
         if (targetFlag == 1){
 

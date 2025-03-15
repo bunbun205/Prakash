@@ -34,7 +34,7 @@ public class DataManagement : MonoBehaviour
         .Child(userID)
         .Child(mode)
         .Child(stimulus)
-        .Child("Target " + numTarget.ToString()); // New target under mode
+        .Child("Target " + (numTarget + 1).ToString()); // New target under mode
 
         newEntryRef.SetRawJsonValueAsync(json).ContinueWith(task =>
         {
