@@ -1,23 +1,41 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class ColorTargetSetup : MonoBehaviour
 {
 
-    float grayValue = 0.0f;
+    float grayValue = 0.5f;
+    float delta = 0.0f;
     int transformIndex;
     public GameObject player;
     private PlayerMovementScript script;
     public bool clicked = false;
     public int counter = 0;
-    ColorSetter setterScript;
     public float distance = 0;
     void Start()
     {
         transformIndex = transform.GetSiblingIndex();
-        setterScript = transform.parent.GetComponent<ColorSetter>();
         player = GameObject.Find("Player");
         script = player.GetComponent<PlayerMovementScript>();
+        string currentScene = SceneManager.GetActiveScene ().name;
+        switch (currentScene) {
+            case "Colors_Level_1":
+            delta = 0.05f;
+            break;
+            case "Colors_Level_2":
+            delta = 0.03875f;
+            break;
+            case "Colors_Level_3":
+            delta = 0.0275f;
+            break;
+            case "Colors_Level_4":
+            delta = 0.01625f;
+            break;
+            case "Colors_Level_5":
+            delta = 0.005f;
+            break;
+        }
         List<Transform> planeTransforms = new List<Transform>();
         List<TargetController> controlScripts = new List<TargetController>();
         for (int i = 0; i < transform.childCount; i++)
@@ -36,40 +54,40 @@ public class ColorTargetSetup : MonoBehaviour
         {
             if (i != oddPlaneIndex)
             {
-                planeTransforms[i].GetComponent<Renderer>().material.color = Color.HSVToRGB(H: 0.0f, S: 0.0f, V: grayValue);
+                planeTransforms[i].GetComponent<Renderer>().material.color = new Color(grayValue, grayValue, grayValue, 1.0f);
+            } else {
+                Debug.Log(planeTransforms[i].GetComponent<Renderer>().material.color);
             }
         }
     }
 
     private Color GetRandomPureColor()
     {
-        int colorChoice = setterScript.colorChoices[transformIndex];
-        float valueChoice1 = Random.Range(setterScript.minSaturation, setterScript.maxSaturation);
-        float valueChoice2 = Random.Range(setterScript.minValue, setterScript.maxValue);
-        float h, s, v;
+        int colorChoice = Random.Range (0,3);
+        Color finalColor = new Color(grayValue, grayValue, grayValue, 1.0f);
+        finalColor[colorChoice] = delta + grayValue;
+        // float h, s;
 
-        s = valueChoice1 / 256;
-        switch (colorChoice)
-        {
-            case 0:
-                h = 0;
-                break;
-            case 1:
-                h = 0.33333333f;
-                break;
-            case 2:
-                h = 0.66666666f;
-                break;
-            default:
-                h = 0;
-                s = 0;
-                break;
-        }
+        // // switch (colorChoice)
+        // // {
+        // //     case 0:
+        // //         finalColor
+        // //         break;
+        // //     case 1:
+        // //         h = 0.33333333f;
+        // //         break;
+        // //     case 2:
+        // //         h = 0.66666666f;
+        // //         break;
+        // //     default:
+        // //         h = 0;
+        // //         s = 0;
+        // //         break;
+        // // }
 
-        v = valueChoice2 / 256;
-        grayValue = v;
+        // s = grayValue + delta;
 
-        Color finalColor = Color.HSVToRGB(H: h, S: s, V: v);
+        //  = Color.HSVToRGB(H: h, S: s, V: grayValue);
 
         return finalColor;
     }

@@ -46,45 +46,43 @@ public class ETargetSetup : MonoBehaviour
     {
         string sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
 
-        Vector3 scaleVec = new Vector3(0.03f, 0.03f, 0.03f);
-
         switch (sceneName) {
             case "E_Level_1" :
-                transform.GetChild(0).localScale = scaleVec;
-                transform.GetChild(1).localScale = scaleVec;
-                transform.GetChild(2).localScale = scaleVec;
+                transform.GetChild(0).localScale = new Vecto3(0.03f, 0.03f, 0.03f);
+                transform.GetChild(1).localScale = new Vecto3(0.03f, 0.03f, 0.03f);
+                transform.GetChild(2).localScale = new Vecto3(0.03f, 0.03f, 0.03f);
                 transform.GetChild(0).localPosition = new Vector3(-0.4f, 0, 0);
                 transform.GetChild(1).localPosition = new Vector3(0, 0, 0);
                 transform.GetChild(2).localPosition = new Vector3(0.4f, 0, 0);
                 break;
             case "E_Level_2" :
-                transform.GetChild(0).localScale = scaleVec / (float)Math.Sqrt(10);
-                transform.GetChild(1).localScale = scaleVec / (float)Math.Sqrt(10);
-                transform.GetChild(2).localScale = scaleVec / (float)Math.Sqrt(10);
+                transform.GetChild(0).localScale = new Vector3(0.025f, 0.025f, 0.025f);
+                transform.GetChild(1).localScale =  new Vecto3(0.025f, 0.025f, 0.025f)
+                transform.GetChild(2).localScale =  new Vecto3(0.025f, 0.025f, 0.025f)
                 transform.GetChild(0).localPosition = new Vector3(-0.3f, 0, 0);
                 transform.GetChild(1).localPosition = new Vector3(0, 0, 0);
                 transform.GetChild(2).localPosition = new Vector3(0.3f, 0, 0);
                 break;
             case "E_Level_3" :
-                transform.GetChild(0).localScale = scaleVec / 10.0f;
-                transform.GetChild(1).localScale = scaleVec / 10.0f;
-                transform.GetChild(2).localScale = scaleVec / 10.0f;
+                transform.GetChild(0).localScale =  new Vector3(0.020f, 0.020f, 0.020f)
+                transform.GetChild(1).localScale =  new Vector3(0.020f, 0.020f, 0.020f)
+                transform.GetChild(2).localScale =  new Vector3(0.020f, 0.020f, 0.020f)
                 transform.GetChild(0).localPosition = new Vector3(-0.25f, 0, 0);
                 transform.GetChild(1).localPosition = new Vector3(0, 0, 0);
                 transform.GetChild(2).localPosition = new Vector3(0.25f, 0, 0);
                 break;
             case "E_Level_4" :
-                transform.GetChild(0).localScale = scaleVec / (float)Math.Pow(Math.Sqrt(10), 3);
-                transform.GetChild(1).localScale = scaleVec / (float)Math.Pow(Math.Sqrt(10), 3);
-                transform.GetChild(2).localScale = scaleVec / (float)Math.Pow(Math.Sqrt(10), 3);
+                transform.GetChild(0).localScale =  new Vecto3(0.015f, 0.015f, 0.015f)
+                transform.GetChild(1).localScale =  new Vecto3(0.015f, 0.015f, 0.015f)
+                transform.GetChild(2).localScale =  new Vecto3(0.015f, 0.015f, 0.015f)
                 transform.GetChild(0).localPosition = new Vector3(-0.2f, 0, 0);
                 transform.GetChild(1).localPosition = new Vector3(0, 0, 0);
                 transform.GetChild(2).localPosition = new Vector3(0.2f, 0, 0);
                 break;
             case "E_Level_5" :
-                transform.GetChild(0).localScale = scaleVec / (float)Math.Pow(Math.Sqrt(10), 4);
-                transform.GetChild(1).localScale = scaleVec / (float)Math.Pow(Math.Sqrt(10), 4);
-                transform.GetChild(2).localScale = scaleVec / (float)Math.Pow(Math.Sqrt(10), 4);
+                transform.GetChild(0).localScale =  new Vecto3(0.01f, 0.01f, 0.01f)
+                transform.GetChild(1).localScale =  new Vecto3(0.01f, 0.01f, 0.01f)
+                transform.GetChild(2).localScale =  new Vecto3(0.01f, 0.01f, 0.01f)
                 transform.GetChild(0).localPosition = new Vector3(-0.15f, 0, 0);
                 transform.GetChild(1).localPosition = new Vector3(0, 0, 0);
                 transform.GetChild(2).localPosition = new Vector3(0.15f, 0, 0);
