@@ -21,6 +21,11 @@ public class PlayerMovementScript : MonoBehaviour
     public AudioClip gameStartedSFX;
     public AudioSource audioSource;
 
+
+    public void SetGameStartSpeed()
+    {
+        speed = 1.0f;
+    }
     
     public void Move()
     {
