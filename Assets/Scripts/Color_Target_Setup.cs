@@ -6,13 +6,16 @@ public class ColorTargetSetup : MonoBehaviour
 {
 
     float grayValue = 0.5f;
-    float delta = 0.0f;
+    [SerializeField] Color[] colors;
+    float delta = 0f;
     int transformIndex;
     public GameObject player;
     private PlayerMovementScript script;
     public bool clicked = false;
     public int counter = 0;
     public float distance = 0;
+
+    private int randomColorIndex = 0;
     void Start()
     {
         transformIndex = transform.GetSiblingIndex();
@@ -21,19 +24,19 @@ public class ColorTargetSetup : MonoBehaviour
         string currentScene = SceneManager.GetActiveScene ().name;
         switch (currentScene) {
             case "Colors_Level_1":
-            delta = 0.05f;
+            delta = 0.050f;
             break;
             case "Colors_Level_2":
-            delta = 0.03875f;
+            delta = 0.045f;
             break;
             case "Colors_Level_3":
-            delta = 0.0275f;
+            delta = 0.040f;
             break;
             case "Colors_Level_4":
-            delta = 0.01625f;
+            delta = 0.035f;
             break;
             case "Colors_Level_5":
-            delta = 0.005f;
+            delta = 0.030f;
             break;
         }
         List<Transform> planeTransforms = new List<Transform>();
@@ -47,6 +50,8 @@ public class ColorTargetSetup : MonoBehaviour
         }
         System.Random rnd = new System.Random();
         int oddPlaneIndex = rnd.Next(0, transform.childCount);
+
+        randomColorIndex = Random.Range(0, 3);
         Color baseColor = GetRandomPureColor();
         planeTransforms[oddPlaneIndex].gameObject.GetComponent<Renderer>().material.color = baseColor;
         controlScripts[oddPlaneIndex].targetFlag = 1;
@@ -54,7 +59,7 @@ public class ColorTargetSetup : MonoBehaviour
         {
             if (i != oddPlaneIndex)
             {
-                planeTransforms[i].GetComponent<Renderer>().material.color = new Color(grayValue, grayValue, grayValue, 1.0f);
+                planeTransforms[i].GetComponent<Renderer>().material.color = colors[randomColorIndex];
             } else {
                 Debug.Log(planeTransforms[i].GetComponent<Renderer>().material.color);
             }
@@ -64,8 +69,9 @@ public class ColorTargetSetup : MonoBehaviour
     private Color GetRandomPureColor()
     {
         int colorChoice = Random.Range (0,3);
-        Color finalColor = new Color(grayValue, grayValue, grayValue, 1.0f);
-        finalColor[colorChoice] = delta + grayValue;
+        //Color finalColor = new Color(r, g, b, 1.0f);
+        Color finalColor = colors[randomColorIndex];
+        finalColor[colorChoice] += delta;
         // float h, s;
 
         // // switch (colorChoice)

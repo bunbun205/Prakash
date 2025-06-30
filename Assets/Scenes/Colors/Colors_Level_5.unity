@@ -290,6 +290,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -1690,6 +1694,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -2816,6 +2824,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -3233,6 +3245,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -3532,6 +3548,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -4885,6 +4905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -5834,6 +5858,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -5885,6 +5913,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -5936,6 +5968,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -7396,6 +7432,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2327b4f2d315b35bb8995d571435db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
+  - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
+  - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
