@@ -60,7 +60,7 @@ public class TargetController : MonoBehaviour
             param.hit = "correct hit";
 
             playerScript.audioSource.PlayOneShot(playerScript.rightAnswerSFX);
-            playerScript.speed = 1;
+            playerScript.speed = 3;
             if (colorTargetScript != null)
             {
                 colorTargetScript.clicked = true;

@@ -18,7 +18,7 @@ public class UI_Buttons : MonoBehaviour
         switch(transform.parent.gameObject.name)
         {
             case "Start":
-                player.speed = 1.0f;
+                player.speed = 3.0f;
                 break;
             case "Return":
                 SceneManager.LoadScene("Entrypoint");

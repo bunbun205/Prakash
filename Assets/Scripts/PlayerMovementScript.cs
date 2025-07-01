@@ -7,7 +7,7 @@ public class PlayerMovementScript : MonoBehaviour
     public List<GameObject> Waypoints;
     public GameObject Targets;
     public int waypointIndex = 0;
-    public float speed = 1.0f;
+    public float speed = 3.0f;
     public float dist = 0;
 
     public bool move = false;
@@ -25,7 +25,7 @@ public class PlayerMovementScript : MonoBehaviour
     public void Move()
     {
         waypointIndex = 0;
-        speed = 1.0f;
+        speed = 3.0f;
         transform.position = Waypoints[waypointIndex].transform.position;
         startScreen.SetActive(false);
         audioSource.PlayOneShot(gameStartedSFX);
