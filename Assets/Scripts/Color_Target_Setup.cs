@@ -7,7 +7,10 @@ public class ColorTargetSetup : MonoBehaviour
 
     float grayValue = 0.5f;
     [SerializeField] Color[] colors;
-    float delta = 0f;
+    [Range(0, 100f)]
+    public float colorChangePercentage;
+    public float percentageChange;
+    public float delta;
     int transformIndex;
     public GameObject player;
     private PlayerMovementScript script;
@@ -24,19 +27,19 @@ public class ColorTargetSetup : MonoBehaviour
         string currentScene = SceneManager.GetActiveScene ().name;
         switch (currentScene) {
             case "Colors_Level_1":
-            delta = 0.050f;
+            delta = (colorChangePercentage +4 * percentageChange) / 100f; ;
             break;
             case "Colors_Level_2":
-            delta = 0.045f;
+            delta = (colorChangePercentage +3 * percentageChange) / 100f; ;
             break;
             case "Colors_Level_3":
-            delta = 0.040f;
+            delta = (colorChangePercentage + 2* percentageChange) / 100f; ;
             break;
             case "Colors_Level_4":
-            delta = 0.035f;
+            delta = (colorChangePercentage + percentageChange)/100f;
             break;
             case "Colors_Level_5":
-            delta = 0.030f;
+            delta = colorChangePercentage/100f;
             break;
         }
         List<Transform> planeTransforms = new List<Transform>();

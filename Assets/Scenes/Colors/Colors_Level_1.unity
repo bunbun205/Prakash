@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: d48a7646f5d0547e889733d84b50cb9f, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 1065b432639a84123a07ea43fe5ba4c9, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -294,6 +294,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -1569,6 +1572,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -2441,6 +2447,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -2773,6 +2782,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -3076,6 +3088,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -4117,6 +4132,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -5092,6 +5110,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -5147,6 +5168,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -5202,6 +5226,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
@@ -6148,6 +6175,9 @@ MonoBehaviour:
   - {r: 0.5641509, g: 0.8205328, b: 1, a: 1}
   - {r: 0.6585034, g: 1, b: 0.5264151, a: 1}
   - {r: 1, g: 0.4509434, b: 0.4509434, a: 1}
+  colorChangePercentage: 5
+  percentageChange: 1
+  delta: 0
   player: {fileID: 907292807}
   clicked: 0
   counter: 0
