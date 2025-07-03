@@ -6,11 +6,12 @@ public class ColorTargetSetup : MonoBehaviour
 {
 
     float grayValue = 0.5f;
-    [SerializeField] Color[] colors;
+    [SerializeField] ColorSO colorSO;
+    Color[] colors;
     [Range(0, 100f)]
-    public float colorChangePercentage;
-    public float percentageChange;
-    public float delta;
+    float level5PercentageChange;
+    float betweenLevelPercentageChange;
+    float delta;
     int transformIndex;
     public GameObject player;
     private PlayerMovementScript script;
@@ -21,25 +22,29 @@ public class ColorTargetSetup : MonoBehaviour
     private int randomColorIndex = 0;
     void Start()
     {
+        colors = colorSO.GetArray();
+        level5PercentageChange = colorSO.level5PercentageChange;
+        betweenLevelPercentageChange = colorSO.betweenLevelPercentageChange;
+
         transformIndex = transform.GetSiblingIndex();
         player = GameObject.Find("Player");
         script = player.GetComponent<PlayerMovementScript>();
         string currentScene = SceneManager.GetActiveScene ().name;
         switch (currentScene) {
             case "Colors_Level_1":
-            delta = (colorChangePercentage +4 * percentageChange) / 100f; ;
+            delta = (level5PercentageChange + 4 * betweenLevelPercentageChange) / 100f; ;
             break;
             case "Colors_Level_2":
-            delta = (colorChangePercentage +3 * percentageChange) / 100f; ;
+            delta = (level5PercentageChange + 3 * betweenLevelPercentageChange) / 100f; ;
             break;
             case "Colors_Level_3":
-            delta = (colorChangePercentage + 2* percentageChange) / 100f; ;
+            delta = (level5PercentageChange + 2* betweenLevelPercentageChange) / 100f; ;
             break;
             case "Colors_Level_4":
-            delta = (colorChangePercentage + percentageChange)/100f;
+            delta = (level5PercentageChange + betweenLevelPercentageChange)/100f;
             break;
             case "Colors_Level_5":
-            delta = colorChangePercentage/100f;
+            delta = level5PercentageChange/100f;
             break;
         }
         List<Transform> planeTransforms = new List<Transform>();
@@ -71,32 +76,12 @@ public class ColorTargetSetup : MonoBehaviour
 
     private Color GetRandomPureColor()
     {
-        int colorChoice = Random.Range (0,3);
-        //Color finalColor = new Color(r, g, b, 1.0f);
+        int colorChoice = Random.Range (0,colors.Length);
         Color finalColor = colors[randomColorIndex];
-        finalColor[colorChoice] += delta;
-        // float h, s;
 
-        // // switch (colorChoice)
-        // // {
-        // //     case 0:
-        // //         finalColor
-        // //         break;
-        // //     case 1:
-        // //         h = 0.33333333f;
-        // //         break;
-        // //     case 2:
-        // //         h = 0.66666666f;
-        // //         break;
-        // //     default:
-        // //         h = 0;
-        // //         s = 0;
-        // //         break;
-        // // }
-
-        // s = grayValue + delta;
-
-        //  = Color.HSVToRGB(H: h, S: s, V: grayValue);
+        finalColor.r += delta;
+        finalColor.g += delta;
+        finalColor.b += delta;
 
         return finalColor;
     }
