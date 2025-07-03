@@ -12,19 +12,26 @@ public class InstructionsPlayer : MonoBehaviour
     public float delay;
 
     private bool started = false, canPlaySecond = true;
+    private PlayerMovementScript player;
 
     private void Start()
     {
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerMovementScript>();
         StartCoroutine(PlayInstructions());
     }
 
     private void Update()
     {
-        if(!audioSource.isPlaying && started && canPlaySecond)
+        if(!audioSource.isPlaying && started && canPlaySecond && player.speed == 0)
         {
             canPlaySecond = false;
             audioSource.clip = clips[1];
             audioSource.Play();
+        }
+
+        if(player.speed != 0)
+        {
+            audioSource.Stop();
         }
     }
 
