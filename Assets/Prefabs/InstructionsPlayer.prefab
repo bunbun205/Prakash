@@ -49,6 +49,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2b6ca48d41bc41f4f80e589b53861c37, type: 3}
   - {fileID: 8300000, guid: 61d05facbe2095d4f84b672c507e055a, type: 3}
   audioSource: {fileID: 4992867905371458509}
+  delay: 2.5
 --- !u!82 &4992867905371458509
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62,7 +63,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
